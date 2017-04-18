@@ -10,14 +10,14 @@ type Config struct {
 }
 
 func main() {
-        f, err := os.Create("/tmp/config.xml")
+        f, err := os.Create("out/config.xml")
         if err != nil {
                 log.Println("create file: ", err)
                 return
         }
         config := Config{"wool", 17}
         //tmpl, err := template.New("test").Parse("{{.Count}} items are made of {{.Material}}")
-        tmpl, err := template.ParseFiles("template/config.tmpl")
+        tmpl, err := template.ParseFiles("tmpl/config.tmpl")
 
         if err != nil {
                 panic(err)
