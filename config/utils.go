@@ -1,4 +1,4 @@
-package common
+package config
 
 import (
 	"encoding/json"
@@ -18,7 +18,7 @@ func init() {
 }
 
 func loadConfig() {
-	file, err := os.Open("common/config.json")
+	file, err := os.Open("config.json")
 	if err != nil {
 		log.Fatalf("[loadConfig] %s\n", err)
 	}

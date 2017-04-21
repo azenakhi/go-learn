@@ -1,0 +1,4 @@
+{
+    "secret_key": "keys/app.rsa",
+    "jenkins_url": "https://jenkins.org"
+}
