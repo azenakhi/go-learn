@@ -1,3 +1,3 @@
-package plugin
+package plug
 
 var Registry []PluginInterace
